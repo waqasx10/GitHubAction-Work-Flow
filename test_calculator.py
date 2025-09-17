@@ -1,5 +1,5 @@
 import pytest
-from calculator import Calculator
+from temp_calculator import Calculator
 
 calc = Calculator()
 
