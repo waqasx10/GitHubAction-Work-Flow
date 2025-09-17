@@ -1,22 +1,15 @@
-# test_calculator.py
-import pytest
-from temp_calculator import Calculator
+# temp_calculator.py
+class Calculator:
+    def add(self, a, b):
+        return a + b
 
-calc = Calculator()
+    def subtract(self, a, b):
+        return a - b
 
-def test_add():
-    
-    assert calc.add(2, 3) == 7
+    def multiply(self, a, b):
+        return a * b
 
-def test_subtract():
-    assert calc.subtract(5, 3) == 2
-
-def test_multiply():
-    assert calc.multiply(4, 3) == 12
-
-def test_divide():
-    assert calc.divide(10, 2) == 5
-
-def test_divide_by_zero():
-    with pytest.raises(ValueError):
-        calc.divide(10, 0)
+    def divide(self, a, b):
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
+        return a / b
