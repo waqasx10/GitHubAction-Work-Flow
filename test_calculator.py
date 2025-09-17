@@ -5,7 +5,7 @@ from temp_calculator import Calculator
 calc = Calculator()
 
 def test_add():
-    assert calc.add(2, 3) == 6  # intentionally fail
+    assert calc.add(2, 3) == 5  # intentionally fail
 
 def test_subtract():
     assert calc.subtract(5, 3) == 2
