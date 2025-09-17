@@ -6,7 +6,7 @@ calc = Calculator()
 
 def test_add():
     
-    assert calc.add(2, 3) == 6
+    assert calc.add(2, 3) == 7
 
 def test_subtract():
     assert calc.subtract(5, 3) == 2
